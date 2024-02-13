@@ -9,9 +9,9 @@ def theClues(clueNum, clueWord):
     print(f"Clue {clueNum}: {clueWord}")
     time.sleep(2)  # delay 
 
-def answer(expected_answer):
-    user_answer = input("Hey Walter, sabes la respuesta? ❤️ : ").lower()
-    return user_answer == expected_answer.lower()    
+def answer(key):
+    userResp = input("Hey Walter, sabes la respuesta? ❤️ : ").lower()
+    return userResp == key.lower()    
 
 def endPoint():
     print("\nCongratulations! Felicidades Amor!")
@@ -25,10 +25,10 @@ def main():
         ("For our second date, we enjoyed Japanese food. Name the Japanese restaurant.", "coco coichibanya"),
         ("I have a special word for you. What is the word I always call you?", "crazy"),
     ]
-    # Display introduction
+    # intro
     startingPoint()
 
-    # Start the treasure hunt
+    # Start 
     for i, (clue, answer) in enumerate(cluesResponse, start=1):
         theClues(i, clue)
 
@@ -41,7 +41,7 @@ def main():
                 print("so close, but not close.")
         
 
-    # Reveal the treasure
+    # results
     print("\nlo ultimo!")
     theClues(len(cluesResponse) + 1, f"The hidden treasure is at ")
     endPoint()
