@@ -1,0 +1,36 @@
+// style.scss
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f0f4;
+    color: #4a4a4a;
+    margin: 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #ff3864;
+}
+
+ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+}
+
+hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #ff3864;
+}
+
+strong {
+    color: #ff3864;
+}
